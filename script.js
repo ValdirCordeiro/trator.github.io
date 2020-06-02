@@ -30,7 +30,7 @@ function iniciarCamporCombustivel() {
 
 function alterarCombustivel(event) {
   if (tagPrecoLitro.value !== '' && tagValorTotalDiesel.value !== '') {
-    tagQtdLitros.value = tagPrecoLitro.value * tagValorTotalDiesel.value;
+    tagQtdLitros.value = tagValorTotalDiesel.value / tagPrecoLitro.value;
   } else if (
     tagPrecoLitro.value === '' &&
     tagValorTotalDiesel.value !== '' &&
